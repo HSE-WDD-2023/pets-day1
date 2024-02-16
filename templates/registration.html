@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <h2>Register You Pet</h2>
+    <form action="/success" method="post">
+        <input type="text" placeholder="Owner's Name" name="owner"
+               autocomplete="off" autofocus>
+        <input type="text" placeholder="Pet's Name" name="pet"
+               autocomplete="off">
+
+        <button type="submit">Register</button>
+    </form>
+
+{% endblock %}
